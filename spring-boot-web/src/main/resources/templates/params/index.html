@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" />
+<head>
+<meta charset="UTF-8" />
+<title>Enviar parametros del Request Http GET-URL</title>
+</head>
+<body>
+
+	<ul>
+		<span>Aqui se estan enviado parametros a traves de la url a
+			vista que esta mapeada desde un controller del mismo proyecto</span>
+		<li><a th:href="@{/params/string(nombreParametro='Hola !')}">/params/string?nombreParametro=Hola !</a></li>
+		<li><a th:href="@{/params/string(nombreParametro='ruben !')}">/params/string?nombreParametro=ruben</a></a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"/>
+<head>
+<meta charset="UTF-8">
+<title>Hola !!</title>
+</head>
+<body>
+
+<h1>Nombre</h1>
+<h2 th:text="${Usuario.nombre}"></h2>
+<h1>Apellido</h1>
+<h2 th:text="${Usuario.apellido}"></h2>
+
+<h2 th:if="${Usuario.email}" th:text="${Usuario.email}"></h2>
+<h2 th:if="${Usuario.email==null}" th:text="'El usuario no tiene email'"></h2>
+
+
+
+</body>
+</html>
